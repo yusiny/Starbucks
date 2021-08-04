@@ -1,8 +1,10 @@
+🌍 netlify 이용 &nbsp;
+<a href="https://focused-bhaskara-53d63a.netlify.app/소"><img src="https://img.shields.io/badge/netlify-00C7B7?style=flat-round&logo=Netlify&logoColor=white&link=https://focused-bhaskara-53d63a.netlify.app/"/></a>
+<br/><br/>
+
 # CSS
 
-<br/>
-
-# 🔥 skill
+## 🔥 skill
 
 ## container 내부 요소 가운데 배치
 
@@ -94,7 +96,7 @@
 
 <br/>
 
-# 🌍 library
+## 🌍 library
 
 ## css-reset
 
@@ -156,7 +158,7 @@
 
 <br/>
 
-# 🔥 skill
+## 🔥 skill
 
 ## body 전에 main.js 불러오기
 
@@ -254,7 +256,7 @@ thisYear.textContent = new Date().getFullYear();
 
 <br/><br/>
 
-# 🌍 library
+## 🌍 library
 
 ## loadash
 
