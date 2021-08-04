@@ -1,0 +1,269 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 9;
+}
+header > .inner {
+  height: 120px;
+}
+/* HEADER logo */
+header .logo {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* HEADER sub-menu */
+header .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+header .sub-menu ul.menu {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  /* display: block; position이 absolute나 fixed이면 block 형태로 바뀜*/
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  color: #656565;
+
+  display: block;
+  padding: 11px 16px;
+  font-size: 12px;
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {
+  height: 34px;
+  display: relative;
+}
+header .sub-menu .search input {
+  box-sizing: border-box;
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+
+  transition: width 0.4s;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+header .sub-menu .search .material-icons {
+  height: 34px;
+  position: absolute;
+  top: 0;
+  bottom: -5px;
+  right: 5px;
+  margin: auto;
+}
+/* HEADER main-menu */
+header .main-menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+header .main-menu .item {
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 30px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+header .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  color: #669900;
+  border-radius: 6px 6px 0 0;
+}
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+header .main-menu .item:hover .item__contents {
+  display: block;
+}
+
+/* main-menu 중 contents__menu */
+header .main-menu .item .item__contents .contents__menu {
+  background-color: #2c2a29;
+}
+header .main-menu .item .item__contents .contents__menu > ul {
+  /* contents__menu 중 list들(커피, 에스프레소 음료) */
+  display: flex;
+  padding: 20px 0;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li {
+  width: 220px;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+  /* list의 제목(커피, 에스프레소 음료) */
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul {
+  /* list 내부 종류  */
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+  color: #669900;
+}
+
+/* main-menu 중 contents-texture */
+header .main-menu .item .item__contents .contents__texture {
+  padding: 26px 0;
+  font-size: 12px;
+  background-image: url("/images/main_menu_pattern.jpg");
+}
+header .main-menu .item .item__contents .contents__texture h4 {
+  color: #999;
+  font-weight: 700;
+}
+header .main-menu .item .item__contents .contents__texture p {
+  color: #669900;
+  margin: 4px 0 14px;
+}
+
+/* HEADER 중 badges  */
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+header .badges .badge {
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  color: #f6f5ef;
+  font-size: 12px;
+}
+footer .inner {
+  padding: 50px;
+  width: 100%;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .inner .menu li {
+  position: relative;
+  font-weight: 700;
+  padding: 15px;
+  display: block;
+}
+footer .inner .menu li:first-child {
+  color: #669900;
+}
+footer .inner .menu li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #555;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+
+footer .inner .btn-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .inner .btn-group .btn {
+  font-size: 12px;
+  margin-right: 12px;
+}
+
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+}
+footer .copyright {
+  margin-top: 12px;
+  color: #999;
+  text-align: center;
+}
+footer .logo {
+  margin: 30px auto 0;
+}
