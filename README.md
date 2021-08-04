@@ -1,5 +1,5 @@
 🌍 netlify 이용 &nbsp;
-<a href="https://focused-bhaskara-53d63a.netlify.app/소"><img src="https://img.shields.io/badge/netlify-00C7B7?style=flat-round&logo=Netlify&logoColor=white&link=https://focused-bhaskara-53d63a.netlify.app/"/></a>
+<a href="https://focused-bhaskara-53d63a.netlify.app/"><img src="https://img.shields.io/badge/netlify-00C7B7?style=flat-round&logo=Netlify&logoColor=white&link=https://focused-bhaskara-53d63a.netlify.app/"/></a>
 <br/><br/>
 
 # CSS
